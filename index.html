@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="My personal portfolio showcasing skills, projects and contact information.">
+
+  <title>My Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="#home" class="logo">My<span>Portfolio.</span></a>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn"
+              type="button" aria-label="Switch to light mode"
+              title="Change theme">☀️</button>
+
+      <button id="menu-btn" type="button"
+              aria-label="Toggle navigation"
+              aria-expanded="false">☰</button>
+    </div>
+
+    <nav id="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="tag">WELCOME TO MY CREATIVE SPACE ✨</p>
+
+        <h1>Hello, I'm <span>Vaishnavi
+        </span></h1>
+
+        <h2 class="typing-line">
+          I'm an <span id="typing-text">Aspiring Web Developer</span><span class="typing-cursor" aria-hidden="true">|</span>
+        </h2>
+
+        <p>
+          I create clean, creative and user-friendly websites
+          using HTML, CSS and JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">Explore Projects ↗</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+          <a href="resume.pdf" class="btn resume-btn" download>
+            Download Resume ↓
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <div class="orbit" aria-hidden="true">✦</div>
+        <div class="avatar" aria-label="Developer illustration">👩🏻‍💻</div>
+        <div class="floating-card">💡 Turning ideas into reality</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section reveal">
+      <p class="tag">GET TO KNOW ME</p>
+      <h2>About <span>Me</span></h2>
+
+      <p class="section-text">
+        I'm a Computer Science student passionate about technology,
+        web design and building useful digital experiences.
+        I enjoy learning new skills and turning creative ideas
+        into real projects.
+      </p>
+
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <span class="highlight-icon">🎓</span>
+          <h3>Education</h3>
+          <p>Computer Science Engineering</p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-icon">🚀</span>
+          <h3>My Goal</h3>
+          <p>Build useful and creative applications</p>
+        </div>
+
+        <div class="highlight-card">
+          <span class="highlight-icon">🌱</span>
+          <h3>Always Learning</h3>
+          <p>Exploring new technologies and ideas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section reveal">
+      <p class="tag">WHAT I WORK WITH</p>
+      <h2>My <span>Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-heading">
+            <span>🌐 HTML</span><span>90%</span>
+          </div>
+          <div class="bar"><i style="--level:90%"></i></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-heading">
+            <span>🎨 CSS</span><span>80%</span>
+          </div>
+          <div class="bar"><i style="--level:80%"></i></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-heading">
+            <span>⚡ JavaScript</span><span>65%</span>
+          </div>
+          <div class="bar"><i style="--level:65%"></i></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-heading">
+            <span>💻 C Programming</span><span>75%</span>
+          </div>
+          <div class="bar"><i style="--level:75%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section reveal">
+      <p class="tag">THINGS I'VE BUILT</p>
+      <h2>Featured <span>Projects</span></h2>
+
+      <!-- Project category filters -->
+      <div class="project-filters" role="group"
+           aria-label="Filter projects by category">
+        <button class="filter-btn active" type="button"
+                data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" type="button"
+                data-filter="web" aria-pressed="false">Web</button>
+        <button class="filter-btn" type="button"
+                data-filter="python" aria-pressed="false">Python</button>
+        <button class="filter-btn" type="button"
+                data-filter="uiux" aria-pressed="false">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="web">
+          <div class="project-icon">🛒</div>
+          <h3>Grocery Shopping UI</h3>
+          <p>A responsive grocery shopping website design.</p>
+          <span class="tech">HTML · CSS · JavaScript</span>
+
+          <button class="btn details-btn" type="button"
+                  data-project="grocery">View Details ↗</button>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-icon">🧮</div>
+          <h3>Smart Calculator</h3>
+          <p>A modern calculator for arithmetic operations.</p>
+          <span class="tech">HTML · CSS · JavaScript</span>
+
+          <button class="btn details-btn" type="button"
+                  data-project="calculator">View Details ↗</button>
+        </article>
+
+        <article class="project-card" data-category="python">
+          <div class="project-icon">🤖</div>
+          <h3>AI Small Business Assistant</h3>
+          <p>A chatbot concept to help answer small-business questions.</p>
+          <span class="tech">Python · Flask</span>
+
+          <button class="btn details-btn" type="button"
+                  data-project="chatbot">View Details ↗</button>
+        </article>
+
+        <article class="project-card" data-category="uiux">
+          <div class="project-icon">🎨</div>
+          <h3>Creative UI Designs</h3>
+          <p>Wireframes and interfaces focused on usability.</p>
+          <span class="tech">UI/UX · Figma</span>
+
+          <button class="btn details-btn" type="button"
+                  data-project="design">View Details ↗</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECT DETAILS POPUP -->
+    <dialog id="project-modal" class="project-modal"
+            aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h2 id="modal-title">Project Details</h2>
+        <button id="modal-close" class="icon-btn"
+                type="button" aria-label="Close project details">✕</button>
+      </div>
+
+      <div id="modal-content">
+        <p>Select a project to see its details.</p>
+      </div>
+    </dialog>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact reveal">
+      <p class="tag">LET'S CONNECT</p>
+      <h2>Have an idea? <span>Let's talk!</span></h2>
+      <p>Send a message about a project, collaboration or opportunity.</p>
+
+      <form id="contact-form" class="contact-form">
+        <label for="contact-name">Your name</label>
+        <input id="contact-name" name="name" type="text"
+               placeholder="Enter your name" required maxlength="80">
+
+        <label for="contact-email">Email address</label>
+        <input id="contact-email" name="email" type="email"
+               placeholder="you@example.com" required maxlength="150">
+
+        <label for="contact-message">Your message</label>
+        <textarea id="contact-message" name="message"
+                  placeholder="Write your message..." rows="5"
+                  required maxlength="3000"></textarea>
+
+        <button class="btn" type="submit">Send Message ↗</button>
+
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="contact-alternative">
+        Prefer email?
+        <a href="mailto:yourmail@example.com">Contact me directly</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top"
+          type="button" aria-label="Back to top" title="Back to top">
+    ↑
+  </button>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Your Name · Made with 💚</p>
+  </footer>
+
+</body>
+</html>
