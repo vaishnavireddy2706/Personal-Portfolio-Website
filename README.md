@@ -4,8 +4,8 @@
 A creative and responsive personal portfolio website showcasing skills, projects, contact information, dark/light mode, and interactive animations.
 
 ## Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ## Features
